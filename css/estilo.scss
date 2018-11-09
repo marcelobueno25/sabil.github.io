@@ -1,4 +1,4 @@
-$cor-primaria: #e2574c;
+$cor-primaria: #E2574C;
 $cor-segundaria: #fff;
 $cor-dark: black ;
 
@@ -12,21 +12,30 @@ body {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 50px;
     line-height: 1.2;
+}
+
+.text-maiusculo {
+    text-transform: uppercase;
+}
+
+.segundaria {
+    color: $cor-segundaria;
 }
 
 /*--------------------opaque--------------------------------*/
 
 .opaque-navbar {
-    background-color: rgba($cor-dark, 0.1);
-  /* Transparent = rgba(0,0,0,0) / Translucent = (0,0,0,0.5)  */
-  padding: 23px;
+background: transparent;
+padding: 23px;
+transition: 500ms;
 }
 
 .opaque-navbar.opaque {
     background-color: $cor-segundaria;
     padding: 23px;
+
 }
 
 .opaque-texto{
@@ -59,11 +68,6 @@ h1 {
     }
 }
 
-
-
-
-/*---------------------------------------------------------------*/
-
 #img-logo {
     background: url(..//image/logo.png) no-repeat;
     width: 120px;
@@ -72,24 +76,6 @@ h1 {
     /* Image Replacemnet*/
     text-indent: 9999px;
 }
-
-
-.text-maiusculo {
-    text-transform: uppercase;
-}
-
-/* FUNDO FICO*/
-
-.branco {
-    color: $cor-segundaria;
-}
-
-.fundo {
-    background: url(../image/1.jpg) no-repeat fixed top;
-    background-size: cover;
-    padding: 300px 0 225px;
-}
-
 
 .overlay {
     background: #151515;
@@ -100,6 +86,15 @@ h1 {
     right: 0;
     width: 100%;
     height: 100%;
+}
+
+/*---------------------------------------------------------------*/
+
+
+.fundo {
+    background: url(../image/1.jpg) no-repeat fixed top;
+    background-size: cover;
+    padding: 300px 0 225px;
 }
 
 
@@ -147,36 +142,38 @@ h1 {
     border-radius: 20px;
     transition: 300ms;
     margin-left: 10px;
-    padding: 5px 30px;
-}
+    padding: 8px 30px;
+    font-size: 15px;
 
-.btn:hover, .btn:focus {
+    &:hover,
+    &:focus {
         box-shadow: 0 0 0 0;
         outline: 0;
+    }
+
 }
 
 .btn-vermelho {
     background-color: $cor-primaria;
     color: $cor-segundaria;
-}
 
-.btn-vermelho:hover{
-    color: $cor-primaria;
-    background-color: transparent;
-    border: 1px dashed $cor-primaria;
-
+    &:hover{
+        color: $cor-primaria;
+        background-color: transparent;
+        border: 1px dashed $cor-primaria;
+    }
 }
 
 .btn-transparente {
     background-color: transparent;
     color: $cor-segundaria;
     border: 1px solid transparent;
-}
 
-.btn-transparente:hover{
-    background-color: $cor-primaria;
-    color: $cor-segundaria;
-    border: 1px solid $cor-primaria;
+    &:hover{
+        background-color: $cor-primaria;
+        color: $cor-segundaria;
+        border: 1px solid $cor-primaria;
+    }
 }
 
 /*--------------------------------------------------------------------------------*/
