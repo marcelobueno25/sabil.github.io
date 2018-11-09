@@ -1,0 +1,203 @@
+$cor-primaria: #e2574c;
+$cor-segundaria: #fff;
+$cor-dark: black ;
+
+body {
+    background: $cor-segundaria;
+    font-family: 'Josefin Sans',sans-serif;
+    color: #777;
+    font-weight: 400px;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 1.2;
+}
+
+/*--------------------opaque--------------------------------*/
+
+.opaque-navbar {
+    background-color: rgba($cor-dark, 0.1);
+  /* Transparent = rgba(0,0,0,0) / Translucent = (0,0,0,0.5)  */
+  padding: 23px;
+}
+
+.opaque-navbar.opaque {
+    background-color: $cor-segundaria;
+    padding: 23px;
+}
+
+.opaque-texto{
+    color: $cor-segundaria;
+}
+
+.opaque-texto.texto{
+    color:black;
+
+}
+
+/*----------------------------------------------------------------------*/
+
+
+/*------------------------ NAVBAR ----------------------------*/
+
+.navbar-nav a,
+.navbar-nav button {
+    font-weight: bold;
+    font-size: 12px;
+    color: $cor-segundaria;
+}
+
+.dropdown-menu{
+    background: #777;
+    
+    a:hover, a:focus{
+        background: transparent;
+        color: $cor-primaria;
+    }
+}
+
+
+
+
+/*---------------------------------------------------------------*/
+
+#img-logo {
+    background: url(..//image/logo.png) no-repeat;
+    width: 120px;
+    height: 50px;
+    display: inline-block;
+    /* Image Replacemnet*/
+    text-indent: 9999px;
+}
+
+
+.text-maiusculo {
+    text-transform: uppercase;
+}
+
+/* FUNDO FICO*/
+
+.branco {
+    color: $cor-segundaria;
+}
+
+.fundo {
+    background: url(../image/1.jpg) no-repeat fixed top;
+    background-size: cover;
+    padding: 300px 0 225px;
+}
+
+
+.overlay {
+    background: #151515;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.relative {
+    position: relative;
+}
+
+/* BARRA EM LARANJA*/
+
+.barra-laranja {
+    background: $cor-primaria;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0 ;
+}
+
+.sss {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.opacity-img{
+    opacity: 0.40;
+}
+
+.conteudo li img:hover{
+    opacity: 1;
+}
+
+.centralizar {
+    text-align: center;
+    line-height: 0.1;
+}
+
+
+
+/* ----------------------------------------- BOTOES ---------------------------------- */
+
+.btn {
+    border-radius: 20px;
+    transition: 300ms;
+    margin-left: 10px;
+    padding: 5px 30px;
+}
+
+.btn:hover, .btn:focus {
+        box-shadow: 0 0 0 0;
+        outline: 0;
+}
+
+.btn-vermelho {
+    background-color: $cor-primaria;
+    color: $cor-segundaria;
+}
+
+.btn-vermelho:hover{
+    color: $cor-primaria;
+    background-color: transparent;
+    border: 1px dashed $cor-primaria;
+
+}
+
+.btn-transparente {
+    background-color: transparent;
+    color: $cor-segundaria;
+    border: 1px solid transparent;
+}
+
+.btn-transparente:hover{
+    background-color: $cor-primaria;
+    color: $cor-segundaria;
+    border: 1px solid $cor-primaria;
+}
+
+/*--------------------------------------------------------------------------------*/
+
+.box-image {
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+}
+
+.box-image img {
+    width: 100%;
+}
+
+.box-descricao {
+    width: 100%;
+    min-width: 350px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
