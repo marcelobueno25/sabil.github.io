@@ -2,7 +2,6 @@ body {
   background: #fff;
   font-family: "Josefin Sans", sans-serif;
   color: #777;
-  font-weight: 400px;
   font-size: 15px;
   letter-spacing: 0.5px;
 }
@@ -16,9 +15,57 @@ h1 {
   text-transform: uppercase;
 }
 
+.primaria {
+  color: #E2574C;
+}
+
+.cor-dark {
+  color: black;
+}
+
 .segundaria {
   color: #fff;
 }
+
+.mg-top {
+  padding: 100px 0 0 0;
+}
+
+.mg-top-20 {
+    padding: 20px 0 0 20px;
+}
+
+.text-posicionar {
+  text-align: center;
+}
+
+.relative {
+  position: relative;
+}
+
+.pg-0 {
+  padding: 0;
+}
+
+.espessura-text-bold {
+  font-weight: bold;
+}
+
+.espessura-text-700 {
+  font-weight: 700;
+}
+
+.espessura-text-600 {
+  font-weight: 600;
+}
+
+.sobre {
+    font-weight: 700;
+    font-size: 34px;
+    color: #343434;
+  letter-spacing: -1px;
+}
+
 
 /*--------------------opaque--------------------------------*/
 .opaque-navbar {
@@ -30,6 +77,7 @@ h1 {
 .opaque-navbar.opaque {
   background-color: #fff;
   padding: 23px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 8px;
 }
 
 .opaque-texto {
@@ -40,7 +88,7 @@ h1 {
   color: black;
 }
 
-/*----------------------------------------------------------------------*/
+/*-------------------------------------------------------------*/
 /*------------------------ NAVBAR ----------------------------*/
 .navbar-nav a,
 .navbar-nav button {
@@ -52,9 +100,28 @@ h1 {
 .dropdown-menu {
   background: #777;
 }
-.dropdown-menu a:hover, .dropdown-menu a:focus {
+
+.dropdown-menu a:hover,
+.dropdown-menu a:focus {
   background: transparent;
   color: #E2574C;
+}
+
+/*---------------------------------------------------------------*/
+/*------------------------IMAGES---------------------------*/
+.img-fundo {
+  background: url(../image/1.jpg) no-repeat fixed top;
+  background-size: cover;
+  padding: 300px 0 225px;
+}
+
+.img-mulheres {
+  background: url(../image/parallax/1.jpg) no-repeat fixed top;
+  background-size: cover;
+}
+
+.tam-mulheres {
+  padding: 60px 0;
 }
 
 #img-logo {
@@ -66,6 +133,30 @@ h1 {
   text-indent: 9999px;
 }
 
+.img-mar {
+  background: url(../image/parallax/2.jpg) no-repeat center fixed;
+  background-size: cover;
+  padding: 70px;
+}
+
+
+.img-responsive,
+.thumbnail>img,
+.thumbnail a>img,
+.carousel-inner>.item>img,
+.carousel-inner>.item>a>img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.img-social {
+  width: 100%;
+  max-height: 600px;
+}
+
+
+/*---------------------------------------------------------------*/
 .overlay {
   background: #151515;
   opacity: 0.7;
@@ -75,13 +166,6 @@ h1 {
   right: 0;
   width: 100%;
   height: 100%;
-}
-
-/*---------------------------------------------------------------*/
-.fundo {
-  background: url(../image/1.jpg) no-repeat fixed top;
-  background-size: cover;
-  padding: 300px 0 225px;
 }
 
 .relative {
@@ -127,7 +211,9 @@ h1 {
   padding: 8px 30px;
   font-size: 15px;
 }
-.btn:hover, .btn:focus {
+
+.btn:hover,
+.btn:focus {
   box-shadow: 0 0 0 0;
   outline: 0;
 }
@@ -136,6 +222,7 @@ h1 {
   background-color: #E2574C;
   color: #fff;
 }
+
 .btn-vermelho:hover {
   color: #E2574C;
   background-color: transparent;
@@ -147,6 +234,7 @@ h1 {
   color: #fff;
   border: 1px solid transparent;
 }
+
 .btn-transparente:hover {
   background-color: #E2574C;
   color: #fff;
@@ -154,6 +242,26 @@ h1 {
 }
 
 /*--------------------------------------------------------------------------------*/
+.quadrado {
+  padding: 30px 30px 15px;
+  border: 2px solid #E2574C;
+  margin: 2px;
+  box-shadow: 3px 6px 13px rgba(0, 0, 0, 0.3);
+  min-width: 300px;
+}
+
+.quadrado h6 {
+  font-weight: 700;
+  color: black;
+}
+
+.alinhamento {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  align-content: space-between;
+}
+
 .box-image {
   height: 400px;
   width: 400px;
@@ -172,7 +280,115 @@ h1 {
 .flex {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
+.col {
+  padding: 0;
+}
+
+
+
 /*# sourceMappingURL=estilo.css.map */
+
+
+/*------------------------------------PLANOS--------------------------------------*/
+
+
+.plano-especial {
+  border: 2px solid #E2574C;
+}
+
+.planos-basico {
+  border: 2px solid #ddd;
+}
+
+.planos {
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 7px 16px 0px rgba(50, 50, 50, 0.2);
+}
+
+.planos-titulo {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 10px 0 0 0;
+}
+
+.planos-valores {
+  position: relative;
+  background-color: #f2f2f2;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 65px;
+  font-weight: bold;
+  padding: 70px 20px;
+}
+
+.valores-especial {
+  background-color: #E2574C;
+}
+
+.planos-valores span {
+  font-size: 25px;
+}
+
+
+.btn-vermelho2 {
+  background-color: #E2574C;
+  color: #fff;
+  width: 100%;
+  margin: 0;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.btn-vermelho2:hover {
+  color: #E2574C;
+  background-color: transparent;
+  border: 1px dashed #E2574C;
+  width: 100%;
+  margin: 0;
+}
+
+.planos-button {
+  padding: 40px;
+}
+
+.planos-lista {
+  padding: 20px 0 0 0;
+  line-height: 50px;
+  font-size: 0.95em;
+  margin:0;
+}
+
+/*--------------------------------------------------------------------------------*/
+
+
+.contato-detalhes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 3px 6px 13px rgba(0, 0, 0, 0.3);
+  height: 100px;
+  box-shadow: 0px 7px 16px 0px rgba(50, 50, 50, 0.2);
+  border-radius: 5px;
+}
+
+.detalhes-padding {
+  padding: 10px;
+}
+
+
+@media only screen and (max-width: 767px) and (min-width: 280px) {
+sabil-key. {
+  font-size: 28px;
+  margin: 40px 0 20px;
+}
+}
