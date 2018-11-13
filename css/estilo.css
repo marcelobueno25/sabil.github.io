@@ -386,9 +386,11 @@ h1 {
 }
 
 
+
 @media only screen and (max-width: 767px) and (min-width: 280px) {
-sabil-key. {
+.sabil-key {
   font-size: 28px;
   margin: 40px 0 20px;
 }
 }
+
