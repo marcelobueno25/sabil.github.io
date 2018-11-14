@@ -4,13 +4,17 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Treinando Bootstrap</title>
+	<title>Sabil - Responssive Multipurpose Landing Page</title>
 	<link href="css/reset.css" rel="stylesheet">
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/estilo.css" rel="stylesheet">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+	 crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-	<script src="https://code.jquery.com/jquery-migrate-3.0.1.js"></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/css/swiper.min.css">
+
 </head>
 
 <body>
@@ -88,7 +92,7 @@
 						</div>
 					</li>
 					<li class="nav-item">
-						<button href="#" class="btn btn-vermelho text-maiusculo opaque-texto ">sing up</button>
+						<button href="#" class="btn btn-vermelho text-maiusculo opaque-texto "><i class="fas fa-unlock"></i> sing up</button>
 					</li>
 				</ul>
 			</div>
@@ -99,13 +103,13 @@
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-8 relative">
+				<div class="col-sm-8 relative fundo-text">
 					<p class="segundaria">the entire idea of the retina-ready technology</p>
 					<h1 class=" segundaria">the easiest way to
 						start your startup business</h1>
-					<div class="espacamento-top2 relative"></div>
-					<button href="#" class="btn btn-vermelho">Try For Free</button>
-					<button href="#" class="btn btn-transparente">See How It Work </button>
+					<div class=" relative"></div>
+					<button href="#" class="btn btn-vermelho">Try For Free <i class="fas fa-arrow-right"></i></button>
+					<button href="#" class="btn btn-transparente">See How It Work <i class="fas fa-arrow-right"></i></button>
 				</div>
 			</div>
 		</div>
@@ -147,9 +151,10 @@
 		</div>
 		<div class="container">
 			<div class="row mg-top">
-				<div class="col-sm-12 col-md-6 center-content">
-					<h5 class="cor-dark espessura-text-bold sabil-key">Sabil is Key for Success..</h5>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio finibus bibendum in sit amet
+				<div class="col-sm-12 col-md-6 center-content sabil-key">
+					<h5 class="cor-dark espessura-text-bold"><i class="fas fa-key"></i>Sabil is Key for Success..</h5>
+					<p><strong>Lorem ipsum dolor</strong> sit amet, consectetur adipiscing elit. Etiam et purus a odio finibus
+						bibendum in sit amet
 						leo.
 						Mauris feugiat erat tellus.Far far away, behind the word mountains, far from the countries Vokalia and
 						Consonantia,
@@ -158,13 +163,13 @@
 						adipiscing elit. Etiam et purus a odio finibus bibendum in sit amet leo. Mauris feugiat erat tellus.</p>
 					<ul>
 						<li>
-							<p>Etiam sed dolor ac diam volutpat</p>
+							<p><i class="far fa-check-circle"></i>Etiam sed dolor ac diam volutpat</p>
 						</li>
 						<li>
-							<p>Erat volutpat aliquet imperdiet</p>
+							<p><i class="far fa-check-circle"></i>Erat volutpat aliquet imperdiet</p>
 						</li>
 					</ul>
-					<button href="#" class="btn btn-vermelho espessura-text-bold">Get In Touch</button>
+					<button href="#" class="btn btn-vermelho espessura-text-bold">Get In Touch <i class="fas fa-arrow-right"></i></button>
 				</div>
 				<div class="col-md-6">
 					<img src="image/1.png" class="img-responsive">
@@ -183,8 +188,8 @@
 						<p class="segundaria">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dictum mattis velit liquam
 							hendrerit lorem at elit.</p>
 					</div>
-					<div class="col-sm-12 col-md-12 col-lg-2 offset-lg-2">
-						<button href="#" class="btn btn-vermelho espessura-text-bold">Get In Touch</button>
+					<div class="col-sm-12 col-md-12 col-lg-2 offset-lg-1">
+						<button href="#" class="btn btn-vermelho espessura-text-bold">Get In Touch <i class="fas fa-arrow-right"></i></button>
 					</div>
 				</div>
 			</div>
@@ -267,6 +272,12 @@
 					<p class="segundaria">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio finibus
 						bibendum in sit amet
 						leo.</p>
+					<ul class="box-lista">
+						<li><i class="fas fa-equals"></i> Lorem ipsum dolor sit amet</li>
+						<li><i class="fas fa-equals"></i> Incididunt ut labore</li>
+						<li><i class="fas fa-equals"></i> Elit sed do eiusmod tempor</li>
+						<li><i class="fas fa-equals"></i> Incididunt ut labore</li>
+					</ul>
 				</div>
 			</div>
 		</div>
@@ -290,6 +301,64 @@
 			</div>
 		</div>
 
+
+		<div class="review mg-top">
+			<div class="container relative">
+				<div class="cor-dark text-posicionar">
+					<div class="container">
+						<p class="text-maiusculo">- REVIEWS -</p>
+						<h3 class="sobre">See what our experts says about us. We have <br> got over 1000s of positive reviews. </h3>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div>
+								<img src="image/quote/1.jpg"></img>
+								<p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
+									blind texts. Separated they live."</p>
+								<span class="author">- Jerry Doe -</span>
+								<br>
+								<span class="author-job">Web Designer @Google</span>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div>
+								<img src="image/quote/2.jpg"></img>
+								<p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
+									blind texts. Separated they live."</p>
+								<span class="author">- Kevin Steve -</span>
+								<br>
+								<span class="author-job">Product Designer @Google</span>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div>
+								<img src="image/quote/3.jpg"></img>
+								<p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
+									blind texts. Separated they live."</p>
+								<span class="author">- Ross Standford -</span>
+								<br>
+								<span class="author-job">Front End Designer @Google</span>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div>
+								<img src="image/quote/2.jpg"></img>
+								<p>"Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the
+									blind texts. Separated they live."</p>
+								<span class="author">- Kevin Steve -</span>
+								<br>
+								<span class="author-job">Product Designer @Google</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
 
 
 		<div class="container relative mg-top">
@@ -386,7 +455,7 @@
 
 		<div class="mg-top">
 			<div class="barra-laranja">
-				<div class="container">
+				<div class="container mg-top-20-alto">
 					<h2 class="segundaria">Sabil is agency, for Business & development since 1995 based in Paris.</h2>
 					<p class="segundaria">At Sabil we care about every detail, our goal to make our clients satisfied with their
 						projects.</p>
@@ -454,9 +523,7 @@
 					<p class="segundaria">*no credit card required</p>
 				</div>
 			</div>
-			<div>
 
-			</div>
 		</div>
 
 		<div class="container">
@@ -476,25 +543,29 @@
 				<div class="row">
 					<div class="col-sm-6 col-md-6 col-lg-3 detalhes-padding">
 						<div class="contato-detalhes">
-							<h6>CALL US</h6>
+							<i class="fas fa-mobile-alt contato-img"></i>
+							<h6 class="cor-dark espessura-text-bold">CALL US</h6>
 							<p>(080) 123 456 7890</p>
 						</div>
 					</div>
 					<div class="col-sm-6 col-md-6 col-lg-3 detalhes detalhes-padding">
 						<div class="contato-detalhes">
-							<h6>EMAIL</h6>
-							<a href="#">hello@Sabil.com</a>
+							<i class="far fa-envelope contato-img"></i>
+							<h6 class="cor-dark espessura-text-bold">EMAIL</h6>
+							<a>hello@Sabil.com</a>
 						</div>
 					</div>
 					<div class="col-sm-6 col-md-6 col-lg-3 detalhes detalhes-padding">
 						<div class="contato-detalhes">
-							<h6>ADDRESS</h6>
+							<i class="fas fa-map-marker-alt contato-img"></i>
+							<h6 class="cor-dark espessura-text-bold">ADDRESS</h6>
 							<p>72, Wallstreet, NY 20110</p>
 						</div>
 					</div>
 					<div class="col-sm-6 col-md-6 col-lg-3 detalhes detalhes-padding">
 						<div class="contato-detalhes">
-							<h6>WEBSITE</h6>
+							<i class="fab fa-blogger contato-img"></i>
+							<h6 class="cor-dark espessura-text-bold">WEBSITE</h6>
 							<p>www.Sabil.com</p>
 						</div>
 					</div>
@@ -502,55 +573,88 @@
 			</div>
 		</div>
 
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
+		<footer class="rotape">
+			<div class="container rotape-container">
+				<div class="row">
+					<div class="col-lg-3">
+						<a class="navbar-brand" href="#" id="img-logo"></a>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio finibus bibendum in sit amet
+							leo. Mauris feugiat erat tellus.</p>
+						<div class="rotape-social">
+							<a href="#" class="fab fa-linkedin-in"></a>
+							<a href="#" class="fab fa-facebook-f href="></a>
+							<a href="#" class="fab fa-twitter"></a>
+							<a href="#" class="fab fa-dribbble"></a>
+							<a href="#" class="fab fa-google-plus-g"></a>
+							<a href="#" class="fab fa-instagram"></a>
+						</div>
+					</div>
+					<div class="col-lg-2">
+						<h6 class="espessura-text-bold segundaria">RELATED LINKS</h6>
+						<ul class="rotape-lista">
+							<li><a href="#">
+									<p>About Us</p>
+								</a></li>
+							<li><a href="#">
+									<p>Why Buy With Us?</p>
+								</a></li>
+							<li><a href="#">
+									<p>Our Team</p>
+								</a></li>
+							<li><a href="#">
+									<p>Contact Us</p>
+								</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-2">
+						<h6 class="espessura-text-bold segundaria">OTHER LINKS</h6>
+						<ul class="rotape-lista">
+							<li><a href="#">
+									<p>Register</p>
+								</a></li>
+							<li><a href="#">
+									<p>Forum</p>
+								</a></li>
+							<li><a href="#">
+									<p>Affiliate</p>
+								</a></li>
+							<li><a href="#">
+									<p>FAQ</p>
+								</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-5">
+						<h6 class="espessura-text-bold segundaria">PAYMENT METHODS</h6>
+						<div class="rotape-pagamento">
+							<img src="image/payment/1.png" alt="">
+							<img src="image/payment/2.png" alt="">
+							<img src="image/payment/3.png" alt="">
+							<img src="image/payment/4.png" alt="">
+						</div>
+						<p>© 2018. Sabil. All Rights Reserved. <br> Designed by Divine-store</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<div class="footer-final">
+			<div class="container">
+				<p>© 2018. SABIL. ALL RIGHTS RESERVED.</p>
+			</div>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.esm.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.esm.bundle.js"></script>
+		<script src="https://code.jquery.com/jquery-migrate-3.0.1.js"></script>
+
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/jquery-3.3.1.min.js"></script>
 		<script src="js/opaque-navbar.js"></script>
+		<script src="js/carousel.js"></script>
+
 
 
 </body>
