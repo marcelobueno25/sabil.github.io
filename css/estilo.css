@@ -55,6 +55,14 @@ h1 {
   padding: 0;
 }
 
+.pg-left-0 {
+  padding-left: 0;
+}
+
+.pg-right-0 {
+  padding-right: 0;
+}
+
 .espessura-text-bold {
   font-weight: bold;
 }
@@ -74,8 +82,12 @@ h1 {
   letter-spacing: -1px;
 }
 
+.background-orange {
+  background: #E2574C;
+}
 
-/*--------------------opaque--------------------------------*/
+/*--------------------NAVBAR E DROPDOWN--------------------------------*/
+
 .opaque-navbar {
   background: transparent;
   padding: 23px;
@@ -112,8 +124,6 @@ h1 {
   color: #151515;
 }
 
-/*-------------------------------------------------------------*/
-/*------------------------ NAVBAR ----------------------------*/
 .navbar-nav a,
 .navbar-nav button {
   font-weight: bold;
@@ -122,18 +132,101 @@ h1 {
 }
 
 .dropdown-menu {
-  background: #777;
+  background: #2F2D2D;
 }
 
-.dropdown-menu a:hover,
-.dropdown-menu a:focus {
+.multi-column-dropdown li a:hover,
+.multi-column-dropdown li a:focus {
   background: transparent;
   color: #E2574C;
 }
 
+.dropdown-menu.columns-1 {
+  min-width: 200px;
+}
 
-/*---------------------------------------------------------------*/
+.dropdown-menu.columns-4 {
+  min-width: 490px;
+}
+
+.dropdown-menu li a {
+  padding: 5px 20px;
+}
+
+.multi-column-dropdown {
+  list-style: none;
+}
+
+.multi-column-dropdown li a {
+  display: block;
+  clear: both;
+  line-height: 1.428571429;
+  white-space: normal;
+}
+
+.multi-column-dropdown li a:hover {
+  text-decoration: none;
+  color: #262626;
+  background-color: #f5f5f5;
+}
+
+@media (max-width: 767px) {
+  .dropdown-menu.multi-column {
+    min-width: 240px !important;
+    overflow-x: hidden;
+  }
+}
+
+/*------------------------HEADER INTRO FUNDO---------------------------*/
+
+.overlay {
+  background: #151515;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.fundo-text h1 {
+  padding-bottom: 30px;
+}
+
+.fundo-text p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+
+/*------------------------ELEMENT CONTENT---------------------------*/
+
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*------------------------°WHAT WE DO - INFO CONTENT---------------------------*/
+
+.sabil-key button {
+  margin-top: 30px;
+}
+
+.sabil-key h5 {
+  padding-bottom: 10px;
+  color: #343434;
+}
+
+@media only screen and (max-width: 767px) and (min-width: 280px) {
+  .sabil-key h5 {
+    font-size: 28px;
+    margin: 40px 0 20px;
+  }
+}
+
 /*------------------------IMAGES---------------------------*/
+
 .img-fundo {
   background: url(../image/1.jpg) no-repeat fixed top;
   background-size: cover;
@@ -184,16 +277,6 @@ h1 {
 
 
 /*---------------------------------------------------------------*/
-.overlay {
-  background: #151515;
-  opacity: 0.7;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-}
 
 .relative {
   position: relative;
@@ -210,11 +293,6 @@ h1 {
   justify-content: space-around;
   align-items: center;
   padding: 40px 0;
-}
-
-.sss {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .opacity-img {
@@ -432,23 +510,6 @@ h1 {
   padding: 10px;
 }
 
-
-.sabil-key button {
-  margin-top: 30px;
-}
-
-.sabil-key h5 {
-  padding-bottom: 10px;
-  color: #343434;
-}
-
-@media only screen and (max-width: 767px) and (min-width: 280px) {
-  .sabil-key h5 {
-    font-size: 28px;
-    margin: 40px 0 20px;
-  }
-}
-
 /*-------------------ICONEs-----------------------------------------------------*/
 
 .fa-arrow-right {
@@ -457,14 +518,6 @@ h1 {
 
 /*--------------------------------------------------------------------------------*/
 
-.fundo-text h1 {
-  padding-bottom: 30px;
-}
-
-.fundo-text p {
-  font-size: 18px;
-  opacity: 0.9;
-}
 
 .fa-check-circle {
   color: #E2574C;
