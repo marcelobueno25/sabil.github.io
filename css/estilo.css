@@ -6,6 +6,12 @@ body {
   letter-spacing: 0.5px;
 }
 
+@media (min-width: 1200px) 
+{.container {
+  max-width: 1170px;
+}
+}
+
 h1 {
   font-size: 50px;
   line-height: 1.2;
@@ -88,6 +94,10 @@ h1 {
 
 /*--------------------°NAVBAR E DROPDOWN--------------------------------*/
 
+.nav-link{
+  padding-left: 0.5rem;
+}
+
 .opaque-navbar {
   background: transparent;
   padding: 23px;
@@ -126,7 +136,7 @@ h1 {
 
 .navbar-nav a,
 .navbar-nav button {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 12px;
   color: #fff;
 }
@@ -206,6 +216,20 @@ h1 {
   display: flex;
   flex-wrap: wrap;
 }
+
+.conteudo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 65px 0;
+  opacity: 0.8;
+}
+
+.conteudo li img:hover {
+  opacity: 1;
+}
+
 
 /*------------------------°WHAT WE DO - INFO CONTENT---------------------------*/
 
@@ -441,20 +465,9 @@ h1 {
 
 /*---------------------------------------------------------------*/
 
-.conteudo {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  padding: 40px 0;
-}
 
 .opacity-img {
   opacity: 0.4;
-}
-
-.conteudo li img:hover {
-  opacity: 1;
 }
 
 .centralizar {
