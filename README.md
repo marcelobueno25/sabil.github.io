@@ -5,6 +5,12 @@ Projetado com foco em performance, personalização e compatibilidade com dispos
 
 ---
 
+## 📸 Capturas de tela
+
+   ![Screenshot do jogo](./screenshot.PNG)
+
+---
+
 ## 🔗 Demonstração
 
 [🔗 Acesse a versão online do projeto](https://marcelobueno25.github.io/sabil.github.io/)
